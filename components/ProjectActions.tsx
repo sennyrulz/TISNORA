@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-
 import { deleteProject, fetchToken } from '../lib/actions'
 
 type Props = {

@@ -56,25 +56,17 @@
         "async": false
       }
     },
-    "(app-client)/./components/Categories.tsx": {
+    "(app-client)/./components/AuthProviders.tsx": {
       "*": {
-        "id": "(sc_client)/./components/Categories.tsx",
+        "id": "(sc_client)/./components/AuthProviders.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/LoadMore.tsx": {
+    "(app-client)/./components/ProfileMenu.tsx": {
       "*": {
-        "id": "(sc_client)/./components/LoadMore.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./components/ProjectCard.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/ProjectCard.tsx",
+        "id": "(sc_client)/./components/ProfileMenu.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -104,17 +96,25 @@
         "async": false
       }
     },
-    "(app-client)/./components/AuthProviders.tsx": {
+    "(app-client)/./components/Categories.tsx": {
       "*": {
-        "id": "(sc_client)/./components/AuthProviders.tsx",
+        "id": "(sc_client)/./components/Categories.tsx",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./components/ProfileMenu.tsx": {
+    "(app-client)/./components/LoadMore.tsx": {
       "*": {
-        "id": "(sc_client)/./components/ProfileMenu.tsx",
+        "id": "(sc_client)/./components/LoadMore.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ProjectCard.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ProjectCard.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -283,6 +283,70 @@
       ],
       "async": false
     },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/components/AuthProviders.tsx": {
+      "id": "(app-client)/./components/AuthProviders.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/components/ProfileMenu.tsx": {
+      "id": "(app-client)/./components/ProfileMenu.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/client/image.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/image.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/shared/lib/head.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/components/Categories.tsx": {
       "id": "(app-client)/./components/Categories.tsx",
       "name": "*",
@@ -306,77 +370,9 @@
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/client/image.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/image.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/node_modules/next/dist/esm/shared/lib/head.js": {
-      "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/components/AuthProviders.tsx": {
-      "id": "(app-client)/./components/AuthProviders.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/components/ProfileMenu.tsx": {
-      "id": "(app-client)/./components/ProfileMenu.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/app/page": {
-      "modules": [],
-      "files": []
-    },
     "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/app/layout": {
       "modules": [
         "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/app/globals.css"
@@ -384,6 +380,10 @@
       "files": [
         "static/css/app/layout.css"
       ]
+    },
+    "/Users/apple/Documents/Github/GomyCode/Checkpoints/TISNORA/app/page": {
+      "modules": [],
+      "files": []
     }
   }
 }
