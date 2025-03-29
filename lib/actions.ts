@@ -4,26 +4,24 @@ import User from "../models/User";
 import { ProjectForm } from "../common.types";
 import { Document, Types } from "mongoose";
 
-export const fetchAllProjects = async (
-  category: string | null | undefined, 
-  endcursor: string | null | undefined, 
-) => {
+// Fetch all projects (paginated, filtered by category)
+export const fetchAllProjects = async (category?: string, endcursor?: string) => {
   await connectDB();
-
   try {
     const query = category ? { category } : {};
-    const projects = await Project.find(query).sort({ createdAt: -1 }).limit(8).lean().exec();
-    return projects;
+    return await Project.find(query).sort({ createdAt: -1 }).limit(8).lean().exec();
   } catch (error) {
     console.error("Error fetching projects:", error);
     throw new Error("Failed to fetch projects");
   }
 };
 
+// Create a new project
 export const createNewProject = async (form: ProjectForm, creatorId: string) => {
   await connectDB();
   try {
     if (!Types.ObjectId.isValid(creatorId)) throw new Error("Invalid creatorId format");
+    
     const project = new Project({ ...form, createdBy: new Types.ObjectId(creatorId) });
     await project.save();
     return project;
@@ -33,7 +31,7 @@ export const createNewProject = async (form: ProjectForm, creatorId: string) => 
   }
 };
 
-
+// Update a project
 export const updateProject = async (form: ProjectForm, projectId: string) => {
   await connectDB();
   try {
@@ -46,6 +44,7 @@ export const updateProject = async (form: ProjectForm, projectId: string) => {
   }
 };
 
+// Delete a project
 export const deleteProject = async (id: string) => {
   await connectDB();
   try {
@@ -58,6 +57,7 @@ export const deleteProject = async (id: string) => {
   }
 };
 
+// Get project details by ID
 export const getProjectDetails = async (id: string) => {
   await connectDB();
   try {
@@ -73,7 +73,7 @@ export const getProjectDetails = async (id: string) => {
   }
 };
 
-
+// Create a new user or return an existing one
 export const createUser = async (name: string, email: string, avatarUrl: string) => {
   await connectDB();
   try {
@@ -89,6 +89,7 @@ export const createUser = async (name: string, email: string, avatarUrl: string)
   }
 };
 
+// Get a user by email
 export const getUser = async (email: string) => {
   await connectDB();
   try {
@@ -101,6 +102,12 @@ export const getUser = async (email: string) => {
   }
 };
 
+// Fetch authentication token (should integrate with an actual auth provider)
+export const fetchToken = async () => {
+  return { token: "your-secure-token" };
+};
+
+// Get projects created by a specific user
 export const getUserProjects = async (id: string, limit: number = 4) => {
   await connectDB();
   try {
@@ -115,4 +122,3 @@ export const getUserProjects = async (id: string, limit: number = 4) => {
     throw new Error("Failed to fetch user projects");
   }
 };
-
