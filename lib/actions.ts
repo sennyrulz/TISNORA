@@ -17,7 +17,7 @@ export const fetchAllProjects = async (category?: string, endcursor?: string) =>
 };
 
 // Create a new project
-export const createNewProject = async (form: ProjectForm, creatorId: string) => {
+export const createNewProject = async (form: ProjectForm, creatorId: string, token: string) => {
   await connectDB();
   try {
     if (!Types.ObjectId.isValid(creatorId)) throw new Error("Invalid creatorId format");
@@ -32,7 +32,7 @@ export const createNewProject = async (form: ProjectForm, creatorId: string) => 
 };
 
 // Update a project
-export const updateProject = async (form: ProjectForm, projectId: string) => {
+export const updateProject = async (form: ProjectForm, projectId: string, token: string) => {
   await connectDB();
   try {
     const updatedProject = await Project.findByIdAndUpdate(projectId, form, { new: true }).lean().exec();

@@ -7,9 +7,9 @@ import { useRouter } from 'next/navigation';
 import FormField from './FormField';
 import Button from './Button';
 import CustomMenu from './CustomMenu';
-import { categoryFilters } from '@/constant';
-import { updateProject, createNewProject, fetchToken } from '@/lib/actions';
-import { FormState, ProjectInterface, SessionInterface } from '@/common.types';
+import { categoryFilters } from '../constant';
+import { updateProject, createNewProject, fetchToken } from '../lib/actions';
+import { FormState, ProjectInterface, SessionInterface } from '../common.types';
 
 type Props = {
     type: string,
