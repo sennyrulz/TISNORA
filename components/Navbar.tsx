@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { NavLinks } from "@/constant";
-import { getCurrentUser } from "@/lib/session";
+import { NavLinks } from "../constant";
+import { getCurrentUser } from "../lib/session";
 
 import AuthProviders from "./AuthProviders";
 import Button from "./Button";

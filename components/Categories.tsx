@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-import { categoryFilters } from "@/constant";
+import { categoryFilters } from "../constant";
 
 const Categories = () => {
   const router = useRouter();
